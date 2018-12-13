@@ -9,5 +9,5 @@ import retrofit2.http.Query;
 public interface GetDataService {
 
     @GET("positions.json")
-    Call<List<Job>> getAllJobs(@Query ("description") String descriptionQuery, @Query("location") String locationQuery);
+    Call<List<Job>> getAllJobs(@Query("description") String descriptionQuery, @Query("location") String locationQuery);
 }

@@ -15,8 +15,10 @@ public class Job {
     private String company;
     @SerializedName("company_logo")
     private String companyLogo;
+    @SerializedName("url")
+    private String urlToJob;
 
-    public Job(String jobTitle, String jobType, String jobLocation, String jobDescription, String company, String companyLogo){
+    public Job(String jobTitle, String jobType, String jobLocation, String jobDescription, String company, String companyLogo) {
         this.jobTitle = jobTitle;
         this.jobType = jobType;
         this.jobLocation = jobLocation;
@@ -47,5 +49,9 @@ public class Job {
 
     public String getJobDescription() {
         return jobDescription;
+    }
+
+    public String getUrlToJob() {
+        return urlToJob;
     }
 }
